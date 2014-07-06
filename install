@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+cp -f usr/ports/Mk/bsd.python.mk /usr/ports/Mk/bsd.python.mk
+exec rsync -avz --delete usr/ports/lang/python27/ /usr/ports/lang/python27/
+
